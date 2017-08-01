@@ -1,7 +1,7 @@
 'use strict';
 
 var _ = require('lodash'),
-  ob = require('openbabel'),
+  //ob = require('openbabel'),
   readJSON = require('./../../lib/read-json'),
   forceFields = require('./../../lib/forcefields');
 

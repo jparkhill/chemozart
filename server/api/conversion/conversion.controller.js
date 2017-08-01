@@ -1,7 +1,7 @@
 'use strict';
 
 var _ = require('lodash'),
-  ob = require('openbabel'),
+  //ob = require('openbabel'),
   conversion = new ob.Conversion(),
   readJSON = require('./../../lib/read-json');
 

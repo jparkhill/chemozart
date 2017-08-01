@@ -1,4 +1,4 @@
-var ob = require('openbabel');
+//var ob = require('openbabel');
 
 var conversion = new ob.Conversion().setOutFormat('mol2').setInFormat('mol2');
 

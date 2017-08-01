@@ -1,6 +1,6 @@
 'use strict';
 
-var ob = require('openbabel');
+//var ob = require('openbabel');
 var _ = require('lodash');
 var readJSON = require('./../../lib/read-json');
 

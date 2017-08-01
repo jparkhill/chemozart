@@ -1,4 +1,4 @@
-var ob = require('openbabel');
+//var ob = require('openbabel');
 
 module.exports = {
   mmff94: ob.ForceField.findForceField('mmff94'),
