@@ -1,11 +1,3 @@
-<!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
@@ -18,64 +10,58 @@
   <!-- build:css({.tmp,client}) app/app.css -->
   <link rel="stylesheet" href="assets/styles/icons.css">
   <link rel="stylesheet" href="app/app.css">
-  <!-- injector:css -->
-  <!-- endinjector -->
-  <!-- endbuild -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
-<body ng-app="chemartApp">
-
-
-<!-- Add your site or application content here -->
-<div ui-view=""></div>
-
-
-<!-- build:js({client,node_modules}) app/vendor.js -->
-<script src="assets/scripts/browser-polyfill.js"></script>
-<script src="assets/scripts/three.js"></script>
-<script src="assets/scripts/chem.js"></script>
-<script src="assets/scripts/mol3d.js"></script>
-<script src="assets/scripts/tween.js"></script>
-<!-- bower:js -->
-<script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-cookies/angular-cookies.js"></script>
-<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="bower_components/lodash/dist/lodash.compat.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="bower_components/angular-busy/dist/angular-busy.js"></script>
-<script src="bower_components/angular-upload/angular-upload.js"></script>
-<script src="bower_components/angular-hotkeys/build/hotkeys.min.js"></script>
-<script src="bower_components/angular-notify/dist/angular-notify.js"></script>
-<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-
-<!-- build:js({.tmp,client}) app/app.js -->
-<script src="app/app.js"></script>
-<!-- injector:js -->
-<script src="app/main/main.controller.js"></script>
-<script src="app/main/main.js"></script>
-<script src="app/resources/builder.factory.js"></script>
-<script src="app/resources/conversion.factory.js"></script>
-<script src="app/resources/energy.factory.js"></script>
-<script src="app/services/canvas.js"></script>
-<script src="app/services/center-atoms.js"></script>
-<script src="app/services/download.js"></script>
-<script src="app/services/molecule-drawer.js"></script>
-<script src="app/services/status.js"></script>
-<script src="app/services/storage.js"></script>
-<script src="components/about/about.directive.js"></script>
-<script src="components/browsehappy/browsehappy.directive.js"></script>
-<script src="components/element/element.directive.js"></script>
-<script src="components/element/element.service.js"></script>
-<script src="components/element/periodic-table.directive.js"></script>
-<script src="components/help/help.directive.js"></script>
-<script src="components/menubar/menubar.controller.js"></script>
-<script src="components/statusbar/statusbar.directive.js"></script>
-<script src="components/toolbar/toolbar.controller.js"></script>
-<!-- endinjector -->
-<!-- endbuild -->
-</body>
-</html>
+	<body ng-app="chemartApp" class="ng-scope">
+	<!-- Add your site or application content here -->
+	<div ui-view class="ng-scope"></div>
+	<div ng-include="components/menubar/menubar.html" class="ng-scope">
+	<!-- build:js({client,node_modules}) app/vendor.js -->
+	<script src="assets/scripts/browser-polyfill.js"></script>
+	<script src="assets/scripts/three.js"></script>
+	<script src="assets/scripts/chem.js"></script>
+	<script src="assets/scripts/mol3d.js"></script>
+	<script src="assets/scripts/tween.js"></script>
+	<!-- bower:js -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="bower_components/lodash/dist/lodash.compat.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-busy/dist/angular-busy.js"></script>
+	<script src="bower_components/angular-upload/angular-upload.js"></script>
+	<script src="bower_components/angular-hotkeys/build/hotkeys.min.js"></script>
+	<script src="bower_components/angular-notify/dist/angular-notify.js"></script>
+	<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:js({.tmp,client}) app/app.js -->
+	<script src="app/app.js"></script>
+	<!-- injector:js -->
+	<script src="app/main/main.controller.js"></script>
+	<script src="app/main/main.js"></script>
+	<script src="app/resources/builder.factory.js"></script>
+	<script src="app/resources/conversion.factory.js"></script>
+	<script src="app/resources/energy.factory.js"></script>
+	<script src="app/services/canvas.js"></script>
+	<script src="app/services/center-atoms.js"></script>
+	<script src="app/services/download.js"></script>
+	<script src="app/services/molecule-drawer.js"></script>
+	<script src="app/services/status.js"></script>
+	<script src="app/services/storage.js"></script>
+	<script src="components/about/about.directive.js"></script>
+	<script src="components/browsehappy/browsehappy.directive.js"></script>
+	<script src="components/element/element.directive.js"></script>
+	<script src="components/element/element.service.js"></script>
+	<script src="components/element/periodic-table.directive.js"></script>
+	<script src="components/help/help.directive.js"></script>
+	<script src="components/menubar/menubar.controller.js"></script>
+	<script src="components/statusbar/statusbar.directive.js"></script>
+	<script src="components/toolbar/toolbar.controller.js"></script>
+	<!-- endinjector -->
+	<!-- endbuild -->
+	Loaded!
+	</body>
+	</html>
